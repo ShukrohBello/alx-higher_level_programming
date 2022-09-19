@@ -12,7 +12,7 @@ class Rectangle:
 
     def __init__(self, width=0, height=0):
         """Initialize the data"""
-        Rectangle.number_of_instances += 1
+        type(self).number_of_instances += 1
         self.width = width
         self.height = height
 
@@ -76,6 +76,6 @@ class Rectangle:
         return "Rectangle({}, {})".format(self.__width, self.__height)
 
     def __del__(self):
-        """Prints a mesage for every instance of a Rectangle deleted"""
-        Rectangle.number_of_instances -= 1
+        """Print a message for every instance of a Rectangle deleted."""
+        type(self).number_of_instances -= 1
         print("Bye rectangle...")
