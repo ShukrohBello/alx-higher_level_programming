@@ -10,17 +10,6 @@ class Rectangle:
         self.width = width
         self.height = height
 
-    def __str__(self):
-        """Returns"""
-        if self.__height == 0 or self._width == 0:
-            return ""
-        rect = ""
-        for i in range(self.__height):
-            for j in range(self.__width):
-                rect += "#"
-            rect += "\n"
-        return rect[:-1]
-
     @property
     def width(self):
         """Retrieves the property"""
@@ -61,8 +50,8 @@ class Rectangle:
         return (self.__width * 2) + (self.__height * 2)
 
     def __str__(self):
-    """Prints the character #"""
-       if self.__width == 0 or self._height == 0:
+        """Prints the character #"""
+        if self.__width == 0 or self._height == 0:
             return ""
         rect = ""
         for i in range(self.__height):
@@ -70,4 +59,3 @@ class Rectangle:
                 rect += "#"
             rect += "\n"
         return rect[:-1]
-
