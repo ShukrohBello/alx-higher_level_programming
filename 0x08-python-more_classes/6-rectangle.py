@@ -3,18 +3,19 @@
 
 
 class Rectangle:
-    """Represents a Rectange
+    """Represents a Rectangle
 
-    Defining an attribute
+    Attributes: 
+        inr and decr
     """
 
     number_of_instances = 0
 
     def __init__(self, width=0, height=0):
         """Initialize the data"""
-    type(self).number_of_instances += 1
         self.width = width
         self.height = height
+        Rectangle.number_of_instances += 1
 
     @property
     def width(self):
@@ -28,7 +29,7 @@ class Rectangle:
             raise TypeError("width must be an integer")
         elif value < 0:
             raise ValueError("width must be >= 0")
-        self.__width = valuei
+        self.__width = value
 
     @property
     def height(self):
@@ -76,6 +77,6 @@ class Rectangle:
         return "Rectangle({}, {})".format(self.__width, self.__height)
 
     def __del__(self):
-        """Print a message for every instance of a Rectangle deleted."""
-        type(self).number_of_instances -= 1
+        """Prints a mesage for every instance of a Rectangle deleted"""
         print("Bye rectangle...")
+        Rectangle.number_of_instances -= 1
