@@ -5,7 +5,7 @@
 class Rectangle:
     """Represents a Rectangle
 
-    Attributes: 
+    Attributes:
         inr and decr
     """
 
