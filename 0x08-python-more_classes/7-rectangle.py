@@ -5,7 +5,8 @@
 class Rectangle:
     """Represents a Rectangle
     Attributes:
-        inr and decr
+        number_of_instances(int):inr and decr
+        print_symbol(any): The symbol used for string representation
     """
 
     number_of_instances = 0
