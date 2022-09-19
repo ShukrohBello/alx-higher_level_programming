@@ -59,3 +59,15 @@ class Rectangle:
             return (0)
 
         return (self.__width * 2) + (self.__height * 2)
+
+    def __str__(self):
+    """Prints the character #"""
+       if self.__width == 0 or self._height == 0:
+            return ""
+        rect = ""
+        for i in range(self.__height):
+            for j in range(self.__width):
+                rect += "#"
+            rect += "\n"
+        return rect[:-1]
+
