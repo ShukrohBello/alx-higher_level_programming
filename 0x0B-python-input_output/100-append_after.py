@@ -1,4 +1,4 @@
-i#!/usr/bin/python3
+#!/usr/bin/python3
 """
 Inserts a line of text to a file,
 after each line containing a specific string.
