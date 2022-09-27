@@ -3,7 +3,6 @@
 
 
 def read_file(filename=""):
-    """Reads from filenaem and prints to stdout"""
+    """Reads from filename and prints to stdout"""
     with open(filename, encoding="utf-8") as f:
-        read_text = f.read()
-        printf(read_text, end="")
+        printf(f.read(), end="")
